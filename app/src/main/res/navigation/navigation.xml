@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.cafe.cafeteria.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/menjars"
+        android:name="com.cafe.cafeteria.menjars"
+        android:label="fragment_menjars"
+        tools:layout="@layout/fragment_menjars" />
+    <fragment
+        android:id="@+id/begudes"
+        android:name="com.cafe.cafeteria.begudes"
+        android:label="fragment_begudes"
+        tools:layout="@layout/fragment_begudes" />
+    <fragment
+        android:id="@+id/postres"
+        android:name="com.cafe.cafeteria.postres"
+        android:label="fragment_postres"
+        tools:layout="@layout/fragment_postres" />
+    <fragment
+        android:id="@+id/total"
+        android:name="com.cafe.cafeteria.total"
+        android:label="fragment_total"
+        tools:layout="@layout/fragment_total" />
+</navigation>
