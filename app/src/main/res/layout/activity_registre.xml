@@ -6,21 +6,21 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".RegistreActivity">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="@string/login"
+            android:text="@string/registre"
             android:textSize="41pt"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <EditText
-            android:id="@+id/loginText"
+            android:id="@+id/registreText"
             android:layout_width="209dp"
             android:layout_height="46dp"
             android:layout_marginTop="48dp"
@@ -33,7 +33,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <EditText
-            android:id="@+id/loginPass"
+            android:id="@+id/registrePass"
             android:layout_width="209dp"
             android:layout_height="46dp"
             android:layout_marginTop="32dp"
@@ -43,27 +43,17 @@
             android:inputType="textPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginText" />
+            app:layout_constraintTop_toBottomOf="@+id/registreText" />
 
         <Button
-            android:id="@+id/botonLogin"
+            android:id="@+id/botonRegistrarse"
             android:layout_width="119dp"
             android:layout_height="64dp"
-            android:layout_marginStart="104dp"
-            android:layout_marginTop="48dp"
-            android:text="LOGIN"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginPass" />
-
-        <Button
-            android:id="@+id/botonGoRegistre"
-            android:layout_width="119dp"
-            android:layout_height="64dp"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="108dp"
+            android:layout_marginTop="52dp"
             android:text="REGISTER"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginPass" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrePass" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -90,7 +80,6 @@
             app:srcCompat="@drawable/pink_semicircle"
             tools:ignore="MissingConstraints"
             tools:srcCompat="@drawable/pink_semicircle" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
