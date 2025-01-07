@@ -27,20 +27,31 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
         <TextView
             android:id="@+id/priceItemCardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingVertical="10dp"
             android:paddingHorizontal="5dp"
-            android:text="0.00"
+            android:text=" 0.00"
             android:textSize="16sp" />
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:background="@null"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+
     </LinearLayout>
+
 
 </androidx.cardview.widget.CardView>

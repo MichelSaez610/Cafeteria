@@ -8,4 +8,8 @@
     <string name="password">Password</string>
     <string name="register">REGISTER</string>
     <string name="menjars">MENJARS</string>
+    <string name="postres">POSTRES</string>
+    <string name="begudes">BEGUDES</string>
+    <string name="pagament">PAGAMENT</string>
+    <string name="pagar">PAGAR</string>
 </resources>

@@ -6,10 +6,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.cafe.cafeteria.Models.CardViewModel
+import com.cafe.cafeteria.Models.MenjarModel
 import com.cafe.cafeteria.R
 
-class MenjarAdapter(private val data: List<CardViewModel>) : RecyclerView.Adapter<MenjarAdapter.MenjarViewHolder>() {
+class MenjarAdapter(private val data: List<MenjarModel>, private val onItemClick: (MenjarModel) -> Unit) :
+    RecyclerView.Adapter<MenjarAdapter.MenjarViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenjarViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -18,9 +19,17 @@ class MenjarAdapter(private val data: List<CardViewModel>) : RecyclerView.Adapte
     }
 
     override fun onBindViewHolder(holder: MenjarViewHolder, position: Int) {
-        val item = data[position]
-        holder.nameAndPriceTextView.text = item.nameAndPrice
-        holder.imageView.setImageResource(item.image)
+        val menjar = data[position]
+        holder.nameTextView.text = menjar.menjar
+        holder.priceTextView.text = "${menjar.preu}€"
+
+        // Set the image here based on your logic
+        holder.imageView.setImageResource(R.drawable.food) // Replace with an actual image resource
+
+        // Set up the click listener for the item
+        holder.itemView.setOnClickListener {
+            onItemClick(menjar)  // Trigger the callback with the clicked item
+        }
     }
 
     override fun getItemCount(): Int {
@@ -29,9 +38,12 @@ class MenjarAdapter(private val data: List<CardViewModel>) : RecyclerView.Adapte
 
     class MenjarViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageview)
-        val nameAndPriceTextView: TextView = itemView.findViewById(R.id.nameItemCardView)
+        val nameTextView: TextView = itemView.findViewById(R.id.nameItemCardView)
+        val priceTextView: TextView = itemView.findViewById(R.id.priceItemCardView)
     }
 }
+
+
 
 
 

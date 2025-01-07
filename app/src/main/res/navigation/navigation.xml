@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/menjars"
-        android:name="com.cafe.cafeteria.menjars"
+        android:name="com.cafe.cafeteria.Menjars"
         android:label="fragment_menjars"
         tools:layout="@layout/fragment_menjars" />
     <fragment
@@ -40,7 +40,7 @@
         tools:layout="@layout/fragment_postres" />
     <fragment
         android:id="@+id/total"
-        android:name="com.cafe.cafeteria.total"
+        android:name="com.cafe.cafeteria.TotalFragment"
         android:label="fragment_total"
         tools:layout="@layout/fragment_total" />
 </navigation>
