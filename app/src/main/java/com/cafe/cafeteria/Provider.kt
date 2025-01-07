@@ -7,18 +7,6 @@ import com.cafe.cafeteria.Models.PostresModel
 class Provider {
     companion object {
 
-        fun getMenjarNames(): List<String> {
-            return Menjars.map { it.menjar }
-        }
-
-        fun getBegudesNames(): List<String> {
-            return Begudes.map { it.beguda }
-        }
-
-        fun getPostresNames(): List<String> {
-            return Postres.map { it.postre }
-        }
-
         val Menjars: List<MenjarModel> = listOf(
             MenjarModel("Macarrons", 10),
             MenjarModel("Arroç a la cubana", 6),

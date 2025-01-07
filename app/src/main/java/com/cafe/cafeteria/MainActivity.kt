@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
             } else {
-                Snackbar.make(binding.root, "Usuari o contrasenya incorrectes", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "L'usuari o la contrasenya son incorrectes", Snackbar.LENGTH_SHORT).show()
             }
 
         }

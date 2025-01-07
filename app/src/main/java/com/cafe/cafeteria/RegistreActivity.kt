@@ -28,7 +28,7 @@ class RegistreActivity : AppCompatActivity() {
             val registreUsuari = binding.registreText.text.toString()
             val registrePassword = binding.registrePass.text.toString()
             if (registreUsuari == "" || registrePassword == "") {
-                Snackbar.make(binding.root, "L'usuari o la contrasenya no poden estar en blanc", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "L'usuari o contrasenya no poden estar en blanc", Snackbar.LENGTH_SHORT).show()
             } else {
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("usuariRegistrat", registreUsuari)
