@@ -20,17 +20,17 @@ class Provider {
         }
 
         val Menjars: List<MenjarModel> = listOf(
-            MenjarModel("Macarrones", 10),
-            MenjarModel("Arroz a la cubana", 6),
+            MenjarModel("Macarrons", 10),
+            MenjarModel("Arroç a la cubana", 6),
             MenjarModel("Ensalada", 5),
             MenjarModel("Spaghetti",8),
-            MenjarModel("Lentejas",13),
-            MenjarModel("Guisantes",12)
+            MenjarModel("Llegums",13),
+            MenjarModel("Guisants",12)
         )
 
         val Begudes: List<BegudesModel> = listOf(
-            BegudesModel("Agua",1.5),
-            BegudesModel("Vino", 10),
+            BegudesModel("Aigua",1.5),
+            BegudesModel("Vi", 10),
             BegudesModel("Nestik", 2.5),
             BegudesModel("Cocacola", 2),
             BegudesModel("Fanta", 2.5)

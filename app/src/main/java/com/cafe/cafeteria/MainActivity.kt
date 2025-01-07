@@ -35,11 +35,11 @@ class MainActivity : AppCompatActivity() {
             val inputUsuario = binding.loginText.text.toString()
             val inputPassword = binding.loginPass.text.toString()
 
-            if (inputUsuario == usuario || inputPassword == password) {
+            if (inputUsuario == usuario && inputPassword == password) {
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
             } else {
-                Snackbar.make(binding.root, "Usuario o contraseña incorrectos", Snackbar.LENGTH_SHORT).show()
+                Snackbar.make(binding.root, "Usuari o contrasenya incorrectes", Snackbar.LENGTH_SHORT).show()
             }
 
         }

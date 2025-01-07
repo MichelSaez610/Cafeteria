@@ -2,12 +2,14 @@ package com.cafe.cafeteria
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
 import com.cafe.cafeteria.databinding.ActivityRegistreBinding
+import com.google.android.material.snackbar.Snackbar
 
 class RegistreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,10 +27,14 @@ class RegistreActivity : AppCompatActivity() {
         binding.botonRegistrarse.setOnClickListener{
             val registreUsuari = binding.registreText.text.toString()
             val registrePassword = binding.registrePass.text.toString()
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("usuariRegistrat", registreUsuari)
-            intent.putExtra("passwordRegistrada", registrePassword)
-            startActivity(intent)
+            if (registreUsuari == "" || registrePassword == "") {
+                Snackbar.make(binding.root, "L'usuari o la contrasenya no poden estar en blanc", Snackbar.LENGTH_SHORT).show()
+            } else {
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("usuariRegistrat", registreUsuari)
+                intent.putExtra("passwordRegistrada", registrePassword)
+                startActivity(intent)
+            }
         }
     }
 }
