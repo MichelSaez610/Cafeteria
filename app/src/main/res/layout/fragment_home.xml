@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Home">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="BUENAS TETAS" />
+        tools:context=".Home">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="301dp"
+            android:layout_height="266dp"
+            android:src="@drawable/image_2025_01_07_155725002"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.179" />
+
+        <Button
+            android:id="@+id/buttonGoMenjars"
+            android:layout_width="345dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="@color/purple"
+            android:text="Menjars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <Button
+            android:id="@+id/buttonGoBegudes"
+            android:layout_width="344dp"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/purple"
+            android:layout_marginTop="20dp"
+            android:text="Begudes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGoMenjars" />
+
+        <Button
+            android:id="@+id/buttonGoPostres"
+            android:layout_width="344dp"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/purple"
+            android:layout_marginTop="20dp"
+            android:text="Postres"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGoBegudes" />
+
+        <Button
+            android:id="@+id/buttonGoPagar"
+            android:layout_width="344dp"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/purple"
+            android:layout_marginTop="20dp"
+            android:text="Pagar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGoPostres" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
