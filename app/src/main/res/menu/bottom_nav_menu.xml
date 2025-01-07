@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home2"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/menjars"
+        android:icon="@drawable/food"
+        android:title="Menjars" />
+    <item
+        android:id="@+id/begudes"
+        android:icon="@drawable/drink"
+        android:title="Begudes" />
+    <item
+        android:id="@+id/postres"
+        android:icon="@drawable/dessert"
+        android:title="Postre" />
+    <item
+        android:id="@+id/total"
+        android:icon="@drawable/baseline_payment_24"
+        android:title="Total" />
+</menu>

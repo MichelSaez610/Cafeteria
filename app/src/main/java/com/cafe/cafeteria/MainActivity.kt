@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        var usuario = intent.getStringExtra("usuariRegistrat")
-        var password = intent.getStringExtra("passwordRegistrada")
+        val usuario = intent.getStringExtra("usuariRegistrat")
+        val password = intent.getStringExtra("passwordRegistrada")
 
         binding.botonGoRegistre.setOnClickListener{
             val intent = Intent(this, RegistreActivity::class.java)
