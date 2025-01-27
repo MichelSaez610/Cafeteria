@@ -33,7 +33,7 @@ class TotalFragment : Fragment() {
                     val allItems = plats + begudes + postres // Combine lists
 
                     val totalAdapter = TotalAdapter(allItems.toMutableList()) { item ->
-                        // Remove item logic
+                        // Removes item logic
                         when {
                             plats.contains(item) -> sharedViewModel.removeItemFromPlats(item.name)
                             begudes.contains(item) -> sharedViewModel.removeItemFromBegudes(item.name)
